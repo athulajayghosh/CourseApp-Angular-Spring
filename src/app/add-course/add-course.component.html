@@ -1,0 +1,35 @@
+<app-nav></app-nav>
+<h1 class="display-4 text-center mt-5">Add Course</h1>   
+<p> </p>
+<div class="container">
+<div class="row">
+  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div class="row g-3 d-flex justify-content-center align-items-center h-100">
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Course Title</label>
+              <input type="text" name="courseTitle" [(ngModel)]="courseTitle" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Course Description</label>
+              <input type="text" name="courseDescription" [(ngModel)]="description" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10">
+              <label for="" class="form-label">Course Date</label>
+              <input type="date" name="courseDate" [(ngModel)]="courseDate" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10">
+              <label for="" class="form-label">Couese Duration</label>
+              <input type="text" name="courseDuration" [(ngModel)]="duration" class="form-control">
+          </div>        
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10">
+            <label for="" class="form-label">Venue</label>
+            <input type="text" name="courseVenue" [(ngModel)]="venue" class="form-control">
+        </div>        
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10 text-center">
+              <button (click)=" readValues()" class="btn btn-primary w-50">Submit</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
